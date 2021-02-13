@@ -99,7 +99,9 @@ A. Observable에 따라 다르다
 
 **Hot Observable** 은 생성되자마자 항목들을 배출하기도 하기 때문에 이 Observable을 구독하는 옵저버들은 어떤 경우에는 항목들이 배출되는 중간부터 구독할 수 있다
 
-**Cold Observable** 은 옵저버가 구독할 때까지 항목을 배출하지 않기 떄문에 이 Observable을 구독하는 옵저버는 Observable이 배출하는 항목 전체를 구독할 수 있도록 보장받는다
+Ex) connect, share, replay, publish ,,,
+
+**Cold Observable** 은 옵저버가 구독할 때까지 항목을 배출하지 않기 때문에 이 Observable을 구독하는 옵저버는 Observable이 배출하는 항목 전체를 구독할 수 있도록 보장받는다 보통 Hot Observable로 생성하지 않은 것들은 Cold Observable이라고 이해하면 된다
 
 
 
@@ -150,4 +152,6 @@ Observable 연산자들로 Observable이 배출하는 연속된 항목들을 변
 - 역압(backpressure) 연산자
 
   특정 제어흐름 원칙들을 적용하는 다양한 연산자들
+
+
 
