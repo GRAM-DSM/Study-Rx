@@ -38,23 +38,23 @@
 
 - onError 메서드가 호출될 때 전달한 메서드를 실행하는 Single 리턴
 
-![image-20210217154612171](/Users/munjisu/Library/Application Support/typora-user-images/image-20210217154612171.png)
+![image-20210218155801178](/Users/munjisu/Library/Application Support/typora-user-images/image-20210218155801178.png)
 
 #### doOnSuccess
 
 - onSuccess 메서드가 호출될 때 전달한 메서드를 실행하는 Single을 리턴
 
-![image-20210217154648304](/Users/munjisu/Library/Application Support/typora-user-images/image-20210217154648304.png)
+![image-20210218155818951](/Users/munjisu/Library/Application Support/typora-user-images/image-20210218155818951.png)
 
 #### onErrorReturn
 
 - 명시된 항목을 배출하는 Single을 오류 알림을 내보내는 Single로 변환
 
-  ![image-20210217152910754](/Users/munjisu/Library/Application Support/typora-user-images/image-20210217152910754.png)
+  ![image-20210218155828089](/Users/munjisu/Library/Application Support/typora-user-images/image-20210218155828089.png)
 
 #### zip & zipWith
 
 - 두개 이상의 Single들이 배출한 항목에 적용된 함수의 결과를 담은 항목을 하나 배출하는 Single을 리턴
 
-![image-20210217153211916](/Users/munjisu/Library/Application Support/typora-user-images/image-20210217153211916.png)
+![image-20210218155837300](/Users/munjisu/Library/Application Support/typora-user-images/image-20210218155837300.png)
 
