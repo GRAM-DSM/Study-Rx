@@ -58,3 +58,38 @@
 
 ![image-20210218155837300](/Users/munjisu/Library/Application Support/typora-user-images/image-20210218155837300.png)
 
+RxJava
+
+```java
+Observable<Integer> src = Observable.zip(
+                Observable.just(1, 2, 3),
+                Observable.just(10, 20, 30),
+                Observable.just(100, 200, 300),
+                Observable.just(1000, 2000, 3000),
+                (w, x, y, z) -> w + x + y + z);
+            
+        src.subscribe(System.out::println);
+```
+
+RxSwift
+
+```swift
+enum Weather { case cloudy, sunny }
+
+let left: Observable < Weather > = Observable.of(.sunny, .cloudy, .cloudy, .sunny) 
+
+let right = Observable.of("Lisbon", "Copenhagen", "London", "Madrid", "Vienna")
+
+
+let observable = Observable
+
+.zip(left, right, resultSelector: { (weather, city) in 
+
+return "It's \(weather) in \(city)."
+
+})
+
+observable.subscribe(onNext: { print($0) })
+
+```
+
